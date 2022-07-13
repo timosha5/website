@@ -499,12 +499,14 @@ background-color: #f38181;
 	position: relative;
 }
 .reviews_item {
-	padding-left: 205px;
+	padding-left: 235px;
 	position: relative;
 
 }
 .reviews_photo {
 	border: 2px solid #95e1d3;
+	border-radius: 50%;
+
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -568,7 +570,65 @@ background-color: #f38181;
 .logos {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
 }
 
+/* works */
 
+.works {
+	display: flex;
+
+}
+
+.works_col {
+	flex: 1 1 0;
+}
+
+.works_item {
+	position: relative;
+	background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
+.works_item:hover .works_info {
+	opacity: 1;
+}
+
+.works_item:hover .works_image {
+	opacity: .1;
+}
+
+.works_image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+
+
+	transition: opacity .2s linear;
+}
+
+.works_info {
+	width: 100%;
+	padding: 0 15px;
+	text-align: center;
+	color: #fff;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 1;
+	transform: translate3d(0, -50%, 0);
+    transition: opacity .2s linear;
+}
+
+.works_title {
+	margin-bottom: 5px;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.works_text {
+	font-size: 15px;
+	font-weight: 300;
+	font-style: italic;
+}
