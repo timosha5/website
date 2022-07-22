@@ -872,9 +872,11 @@ background-color: #f38181;
 }
 
 .blogs_title {
+	display: block;
+	margin-bottom: 5px;
 	color: #333;
 	font-size: 12px;
-	line-height: 1.2;
+	line-height: 1.5;
 	text-transform: uppercase;
 	text-decoration: none;
 }
@@ -891,11 +893,14 @@ background-color: #f38181;
 
 .instagram {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .instagram_item {
-	flex: 1 1 0;
-	border: 1px solid #fff;
+	width: 32.33333%;
+	border-bottom: 1px solid #fff;
+	
 }
 .instagram_item img {
 	display: block;
@@ -956,4 +961,14 @@ background-color: #f38181;
 }
 .subscribe_btn:focus {
 	outline: 0;
+}
+.copyright {
+	font-size: 14px;
+	color: #333;
+	padding-top: 20px 0;
+	border-top: 1px solid #e5e5e5;
+	text-align: center;
+}
+.copyright span {
+	color: #F38181;
 }
