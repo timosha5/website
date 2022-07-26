@@ -82,6 +82,7 @@ margin: 40px 0;
 
 }
 .header.fixed {
+	padding: 10px 0;
 	background-color: darkgray;
 	position: fixed;
 	top: 0;
@@ -95,7 +96,6 @@ margin: 40px 0;
 
 .header {
     width: 100%;
-    background-color: darkgrey;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     padding-top: 30px;
 
@@ -175,6 +175,10 @@ margin: 40px 0;
 	z-index: 1;
 
 }
+.nav-toggal:focus {
+	outline: 0;
+
+}
 .nav-toggal-item {
 	display: block;
 	width: 100%;
@@ -226,6 +230,7 @@ margin: 40px 0;
 	bottom: -8px;
 }
 .btn {
+
 	display: inline-block;
 	vertical-align: top;
 	padding: 8px 30px;
@@ -237,6 +242,11 @@ margin: 40px 0;
 	text-transform: uppercase;
 	text-decoration: none;
 
+}
+.link-btn{
+	margin: 0 auto;
+	display: block;
+	width: 170px;
 }
 .btn:hover {
 	background-color: #fff;
@@ -615,6 +625,7 @@ background-color: #f38181;
 	position: relative;
 }
 .reviews_item {
+	min-height: 250px;
 	padding-left: 235px;
 	position: relative;
 
@@ -654,9 +665,13 @@ background-color: #f38181;
 
 	background-color: #f38181;
 }
-.reviews_btn {
+
+.slick-arrow {
+	display: block;
 	font-size: 0;
-	color: transparent;
+	color: transparent;t
+	border: 0;
+	background: none;
 
 	position: absolute;
 	top: 50%;
@@ -664,7 +679,11 @@ background-color: #f38181;
 	transform: translateY(-50%);
 
 }
-.reviews_btn:after {
+.slick-arrow:focus {
+	outline: 0;
+}
+
+.slick-arrow:after {
 	content: "";
 	display: block;
 	width: 16px;
@@ -675,11 +694,13 @@ background-color: #f38181;
 	
 
 }
-.reviews_btn--prev {
+
+.slick-prev {
 	left: 0;
 	transform: rotate(-45deg);
 }
-.reviews_btn--next {
+.reviews_btn--next 
+.slick-next {
 	right: 0;
 	transform: rotate(135deg);
 }
@@ -1191,6 +1212,15 @@ background-color: #f38181;
 
 	.nav {
 		display: none;
+		width: 100%;
+
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: #eb8b8d;
+	}
+	.nav.active {
+		display: block;
 	}
 	.nav_link {
 		display: block;
